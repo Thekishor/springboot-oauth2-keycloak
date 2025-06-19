@@ -1,4 +1,4 @@
-# springboot-oauth2-keycloak
+![Screenshot 2025-06-19 231526](https://github.com/user-attachments/assets/b64df1fd-7593-46e4-8871-7c0ee4aa3225)# springboot-oauth2-keycloak
 # User Service - Spring Boot OAuth2 + Keycloak
 
 This is a **User Management Microservice** built with **Spring Boot** and secured using **OAuth2** and **Keycloak**. It allows clients to perform basic CRUD operations on users, as well as fetch users by address.
@@ -59,3 +59,24 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8180/realms/{your-realm-name}
+
+
+## Screenshots
+
+## keycloak
+![keycloak](https://github.com/user-attachments/assets/acf869f0-ed88-4ab0-b20a-c4f77018f6f9)
+
+## Token Generate
+![access and refresh token](https://github.com/user-attachments/assets/35f05c53-5001-4fed-b7e6-37a3c15444fa)
+
+
+## Get All Users
+![get all user](https://github.com/user-attachments/assets/a0b6e78d-e7fd-41b0-9f3e-aa1f55e23f80)
+
+## Get User By Id
+![get user by userId](https://github.com/user-attachments/assets/6b5f6561-2813-4467-9e34-e48c5c221e18)
+
+## Unauthorized User
+![withiut access token](https://github.com/user-attachments/assets/0d1010e3-787b-4049-9393-cd732d76cf88)
+
+
