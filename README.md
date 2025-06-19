@@ -44,7 +44,7 @@ All endpoints are protected using **OAuth2 Bearer Tokens** (JWT) issued by **Key
 | GET    | `/user`                   | Get all users         | 
 | PUT    | `/user/{userId}`          | Update user by ID     | 
 | DELETE | `/user/{userId}`          | Delete user by ID     | 
-| GET    | `/user/address/{address}` | Get users by address  | 
+| GET    | `/user/address/`          | Get users by address  | 
 
 ---
 
