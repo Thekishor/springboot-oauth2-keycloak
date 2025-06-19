@@ -1,4 +1,4 @@
-![Screenshot 2025-06-19 231526](https://github.com/user-attachments/assets/b64df1fd-7593-46e4-8871-7c0ee4aa3225)# springboot-oauth2-keycloak
+# springboot-oauth2-keycloak
 # User Service - Spring Boot OAuth2 + Keycloak
 
 This is a **User Management Microservice** built with **Spring Boot** and secured using **OAuth2** and **Keycloak**. It allows clients to perform basic CRUD operations on users, as well as fetch users by address.
