@@ -46,21 +46,6 @@ All endpoints are protected using **OAuth2 Bearer Tokens** (JWT) issued by **Key
 | DELETE | `/user/{userId}`          | Delete user by ID     | 
 | GET    | `/user/address/`          | Get users by address  | 
 
----
-
-## Configuration
-
-Update your `application.yml` (or `application.properties`) with appropriate Keycloak settings:
-
-```yaml
-spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8180/realms/{your-realm-name}
-
-
 ## Screenshots
 
 ## keycloak
@@ -79,4 +64,16 @@ spring:
 ## Unauthorized User
 ![withiut access token](https://github.com/user-attachments/assets/0d1010e3-787b-4049-9393-cd732d76cf88)
 
+---
 
+## Configuration
+
+Update your `application.yml` (or `application.properties`) with appropriate Keycloak settings:
+
+```yaml
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/{your-realm-name}
