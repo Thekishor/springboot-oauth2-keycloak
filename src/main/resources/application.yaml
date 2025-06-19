@@ -1,0 +1,34 @@
+server:
+  port: 8090
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8180/realms/Kishor
+          jwk-set-uri: http://localhost:8180/realms/Kishor/protocol/openid-connect/certs
+  application:
+    name: springboot-oauth2-keycloak
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springboot_oauth2_keycloak
+    username: postgres
+    password: kishor@2233#
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: env,beans
+  endpoint:
+    health:
+      show-details: ALWAYS
+jwt:
+  oauth2:
+    converter:
+      resource-id: springboot-oauth2-keycloak
+      principle-attribute: preferred_username
